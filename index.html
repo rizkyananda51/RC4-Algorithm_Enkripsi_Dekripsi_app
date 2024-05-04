@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RC4 Encrypt and Decrypt</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="title">
+            <h1>RC4 Algorithm To Encrypt and Decrypt</h1>
+            <p>Lock Your Messages To Safety</p>
+        </div>
+        <div class="form">
+            <div class="messages">
+                <label for="messages">Messages :</label>
+                <textarea name="messages" id="messages" placeholder="Enter Your Messages"></textarea>
+            </div>
+            <div class="key">
+                <label for="key">Key :</label>
+                <img src="key.png" alt="">
+                <input type="text" id="key" name="key" placeholder="Enter Your Key">
+            </div>
+            <div class="btn">
+                <button onclick="encryptDecrypt()" class="btn-1">Encyrpt/Decrypt</button>
+                <button onclick="clearFields()" class="btn-2">Clear</button>
+            </div>
+            <div class="result">
+                <label for="result">Result :</label>
+                <textarea name="result" id="result" placeholder="Your Result" readonly></textarea>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>Copyrights © 2024 Nabilla Audytha Sukirman (227006064) . All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
